@@ -1,3 +1,8 @@
+/* Denne Deck Class skal repræsentere et helt nyt dæk med de 40 kort fra Card.class, som den putter i en vilkårlig rækkefølge.
+constructoren fungere således, at den laver dækket med 40 kort i, mens at next() metoden derefter bruges til at returnere et kort,
+som derefter fjernes. derved bliver dækket mindre og mindre, hvilket fører til, at isEmpty() metoden til sidst vil returnere true,
+da der ikke er flere kort tilbage i dækket.
+*/
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.List;
