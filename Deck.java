@@ -25,4 +25,5 @@ Public class Deck {
 		this.cardDeck = cardDeck;
 		return cardDeck.size() == null;	
 }
+	// isEmpty metoden skal muligvis fjernes, da det burde være en metode, der fungere ligesom f.eks length, add, remove osv.
 
