@@ -14,9 +14,9 @@ Public class Deck {
 		this.cardDeck = new ArrayList<Card>();
 		Card[] cardValues = Card.values();
 		this.random = new Random;
-		for (int deckLength = values.length, valueOfCard = 0; valueOfCard < deckLength; valueOfCard++) {
+		for (int deckLength = cardValues.length, cardNumber = 0; cardNumber < deckLength; cardNumber++) {
 			this.cardDeck;
-			cardDeck.add(cardValues[valueOfCard]);
+			cardDeck.add(cardValues[cardNumber]);
 		}
 }
 //Returnere det næste kort i dækket, som bliver fjernet derefter.
