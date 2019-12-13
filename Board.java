@@ -4,12 +4,15 @@ public class Board{
 	private Player nextPlayer;
 	private Player secondPlayer;
 	private Card trumpCard;
+	private Deck deck;
 
 	public Board(Player player, Player autoPlayer) {
 		this.player = player;
 		this.autoPlayer = autoPlayer;
 		this.nextPlayer = player;
 		this.secondPlayer = autoPlayer;
+		this.deck = new Deck();
+		this.trumpCard = this.deck.next();
 	}
 	
 	public Card trumpCard(){
