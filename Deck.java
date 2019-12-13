@@ -15,7 +15,7 @@ Public class Deck {
 		while (cardNumber < deckLength){
 		this.cardDeck;
 		cardDeck.add(cardValues[cardNumber]);
-		cardnumber++;
+		cardNumber++;
 		}
 }
 //Returnere det næste kort i dækket, som bliver fjernet derefter.
@@ -27,7 +27,7 @@ Public class Deck {
 }
 //Tjekker om dækket er tomt. hvis det er, returneres True.
     public boolean isEmpty(){
-		If (cardDeck.size() == null)
+		If (cardDeck.size() == null);
 		return true;	
 }
 
