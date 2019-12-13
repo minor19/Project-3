@@ -1,9 +1,9 @@
 public class Board{
 	private Player player;
 	private Player autoPlayer;
-	private Card trumpCard;
 	private Player nextPlayer;
 	private Player secondPlayer;
+	private Card trumpCard;
 
 	public Board(Player player, Player autoPlayer) {
 		this.player = player;
@@ -13,11 +13,11 @@ public class Board{
 	}
 	
 	public Card trumpCard(){
-		return this.trumpCard;	
+		return this.trumpCard;
 	}
 	
 	public Player next() {
-		return this.nextPlayer;	
+		return this.nextPlayer;
 	}
 
 	/*
@@ -79,8 +79,15 @@ public class Board{
 		return this.nextPlayer;
 	}
 	
+	/*
+	* For at kunne afgøre om spillet er slut, har vi valgt at
+	* se på length for player's hånd.
+	*/
 	public boolean gameOver() {
-
+		if(this.player.hand().length == 0)
+			return true;
+		else
+			return false;
 	}
 
 }
