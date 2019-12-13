@@ -29,9 +29,8 @@ public class AutoPlayer extends Player{
 	}
 	
 	/*
-	* Metode som lægger et kort efter Player og tager højde for om
-	* det første kort i arrayet er et godt valg, hvis ikke, prøver
-	* det det næste kort i arrayet.
+	* Metode som lægger et kort efter Player, baseret på samme løsning
+	* som i forrige metode.
 	*/
 	public Card next(Card card){
 		Card[] hand=this.hand();
