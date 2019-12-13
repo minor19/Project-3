@@ -80,7 +80,7 @@ public class Board{
 		* Til sidst i metoden vælger vi personen der begynder næste runde
 		* ud fra hvem der tabte nuværende runde.
 		*/
-		if(win){
+		if(win=true){
 			this.nextPlayer.addToCollectedCards(card1);
 			this.nextPlayer.addToCollectedCards(card2);
 		}
