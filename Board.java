@@ -1,14 +1,14 @@
 public class Board{
-	private Player player;
-	private Player autoPlayer;
+	private Player player1;
+	private Player player2;
 	private Player nextPlayer;
 	private Player secondPlayer;
 	private Card trumpCard;
 	private Deck deck;
 
 	public Board(Player player, Player autoPlayer) {
-		this.player = player;
-		this.autoPlayer = autoPlayer;
+		this.player1 = player;
+		this.player2 = autoPlayer;
 		this.nextPlayer = player;
 		this.secondPlayer = autoPlayer;
 		this.deck = new Deck();
