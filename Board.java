@@ -1,11 +1,17 @@
 public class Board{
+	/*
+	* Vi opskriver først og fremmest instance variables.
+	*/
 	private Player player1;
 	private Player player2;
 	private Player nextPlayer;
 	private Player secondPlayer;
 	private Card trumpCard;
 	private Deck deck;
-
+	
+	/*
+	* Contructors for instance variables.
+	*/
 	public Board(Player player, Player autoPlayer) {
 		this.player1 = player;
 		this.player2 = autoPlayer;
@@ -15,10 +21,16 @@ public class Board{
 		this.trumpCard = this.deck.next();
 	}
 	
+	/*
+	* Returnere trumpcard.
+	*/
 	public Card trumpCard(){
 		return this.trumpCard;
 	}
 	
+	/*
+	* Returnere en reference til spilleren der begynder runden.
+	*/
 	public Player next() {
 		return this.nextPlayer;
 	}
