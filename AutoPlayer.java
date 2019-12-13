@@ -25,7 +25,6 @@ public class AutoPlayer extends Player{
 				return hand[i];
 			i=i+1;
 		}
-		return null;
 	}
 	
 	/*
@@ -41,6 +40,5 @@ public class AutoPlayer extends Player{
 				return hand[i];
 			i=i+1;
 		}
-		return null;
 	}
 }
