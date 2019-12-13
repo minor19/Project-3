@@ -3,32 +3,36 @@ constructoren fungere således, at den laver dækket med 40 kort i, mens at next
 som derefter fjernes. derved bliver dækket mindre og mindre, hvilket fører til, at isEmpty() metoden til sidst vil returnere true,
 da der ikke er flere kort tilbage i dækket.
 */
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.List;
+ import java.util.Random;
 Public class Deck {
-	private List<Card> cardDeck;
-	private Random random;
+	private Card[] cardDeck;
+	private Random randomCard = new Random();
 //Laver et nyt Dæk kort, som indeholder 40 kort.
     public Deck(){
-		this.cardDeck = new ArrayList<Card>();
 		Card[] cardValues = Card.values();
-		this.random = new Random;
-		for (int deckLength = cardValues.length, cardNumber = 0; cardNumber < deckLength; cardNumber++) {
-			this.cardDeck;
-			cardDeck.add(cardValues[cardNumber]);
+		int deckLength = cardValues.length();
+		int cardNumber = 0;
+		while (cardNumber < deckLength){
+		this.cardDeck;
+		cardDeck.add(cardValues[cardNumber]);
+		cardnumber++;
 		}
 }
 //Returnere det næste kort i dækket, som bliver fjernet derefter.
     public Card next(){
 		this.cardDeck = cardDeck;
 		this.random = random;
-		return cardDeck.remove(random.nextInt(cardDeck.size()));	
+		Int ranCardToRemove = randomCard.nextInt(cardDeck.size());
+		return cardDeck.remove(ranCardToRemove);	
 }
 //Tjekker om dækket er tomt. hvis det er, returneres True.
     public boolean isEmpty(){
-		this.cardDeck = cardDeck;
-		return cardDeck.size() == null;	
+		If (cardDeck.size() == null)
+		return true;	
 }
-	// isEmpty metoden skal muligvis fjernes, da det burde være en metode, der fungere ligesom f.eks length, add, remove osv.
+
+
+
+
+}
 
