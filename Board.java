@@ -99,7 +99,7 @@ public class Board{
 	* se på length for player's hånd.
 	*/
 	public boolean gameOver() {
-		if(this.player.hand().length == 0)
+		if(this.secondPlayer.hand().length == 0)
 			return true;
 		else
 			return false;
