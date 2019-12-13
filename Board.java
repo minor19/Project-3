@@ -67,11 +67,11 @@ public class Board{
 		this.nextPlayer.removeFromHand(card1);
 		this.secondPlayer.removeFromHand(card2);
 		if(!this.deck.isEmpty()){
-			this.nextPlayer.addToHand(this.deck.nextPlayer());
+			this.nextPlayer.addToHand(this.deck.next());
 			if(this.deck.isEmpty())
 				this.secondPlayer.addToHand(this.trumpCard);
 			else
-				this.secondPlayer.addToHand(this.deck.nextPlayer());
+				this.secondPlayer.addToHand(this.deck.next());
 		}
 		
 		/*
